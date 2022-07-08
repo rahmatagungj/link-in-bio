@@ -6,7 +6,7 @@ body, html {
 }
 
 body {
-  background: url("https://images.pexels.com/photos/39811/pexels-photo-39811.jpeg") no-repeat center center fixed;
+  background: url("https://cdnb.artstation.com/p/assets/images/images/029/320/295/original/bogdan-mb0sco-coffeeanim.gif?1601147277") no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -77,7 +77,7 @@ ul {
 }
 
 ul > li {
-  background-color: #fffa;
+  background-color: #ffffffe0;
   backdrop-filter: blur(10px) saturate(160%) contrast(180%);
   -webkit-backdrop-filter: blur(10px) saturate(160%) contrast(180%);
   border-radius: 10em;

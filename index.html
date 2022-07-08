@@ -103,5 +103,19 @@
         discordButton.innerHTML = 'Discord'
       }, 2000)
     })
+
+    const audio = document.createElement("AUDIO")
+    const isPlaying = false
+    document.body.appendChild(audio);
+    audio.src = "sound.mp3"
+
+    document.body.addEventListener("touchmove", function () {
+      if (isPlaying) return 
+      audio.play()
+    })
+    document.body.addEventListener("mousemove", function () {
+      if (isPlaying) return 
+      audio.play()
+    })
   </script>
 </html>
