@@ -65,6 +65,11 @@
           </a>
         </li>
         <li>
+          <a href="#" id="discord-button">
+            Discord
+          </a>
+        </li>
+        <li>
           <a href="https://www.linkedin.com/in/rahmatagungj">
             LinkedIn
           </a>
@@ -81,4 +86,21 @@
       </ul>
     </main>
   </body>
+  <script>
+    const DISCORD_USERNAME = 'rahmatagungj#4882'
+    const discordButton = document.querySelector('#discord-button')
+    discordButton.addEventListener('click', () => {
+      const textArea = document.createElement('textarea')
+      textArea.value = DISCORD_USERNAME
+      document.body.appendChild(textArea)
+      textArea.select()
+      document.execCommand('copy')
+      textArea.remove()
+      // show toast
+      discordButton.innerHTML = 'Copied!'
+      setTimeout(() => {
+        discordButton.innerHTML = 'Discord'
+      }, 2000)
+    })
+  </script>
 </html>
