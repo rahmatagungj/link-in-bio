@@ -87,6 +87,7 @@
       </ul>
     </main>
   </body>
+    <script src="https://cdn.jsdelivr.net/npm/howler@2.2.3/dist/howler.min.js"></script>
   <script>
     const DISCORD_USERNAME = 'rahmatagungj#4882'
     const discordButton = document.querySelector('#discord-button')
@@ -104,18 +105,13 @@
       }, 2000)
     })
 
-    const audio = document.createElement("AUDIO")
-    const isPlaying = false
-    document.body.appendChild(audio);
-    audio.src = "sound.mp3"
+    var sound = new Howl({
+      src: ['sound.mp3']
+    });
 
-    document.body.addEventListener("touchmove", function () {
-      if (isPlaying) return 
-      audio.play()
-    })
-    document.body.addEventListener("mousemove", function () {
-      if (isPlaying) return 
-      audio.play()
-    })
+    sound.once('load', function(){
+      sound.play();
+    });
+
   </script>
 </html>

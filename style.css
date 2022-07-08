@@ -7,7 +7,11 @@ body, html {
 
 body {
   background: url("https://cdnb.artstation.com/p/assets/images/images/029/320/295/original/bogdan-mb0sco-coffeeanim.gif?1601147277") no-repeat center center fixed;
-  background-size: cover;
+  background-size: 100% 100%;
+  -webkit-background-style: cover;
+  -moz-background-style: cover;
+  -o-background-size: cover;
+  background-style: cover;
 }
 
 #vanta {
